@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soju's Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="cursor-dot"></div>
+
+    <button id="darkModeToggle" class="dark-mode-btn">
+        <i class="fas fa-sun"></i>
+    </button>
+      
+    <main>
+        <section id="heroSection" class="hero">
+            <h1 class="hero__title">
+                <span id="greet">hi</span>. <!-- Change to ID for easy referencing -->
+                <br>
+                <span class="are">i’m</span><br>
+                <span>abhishek</span>.
+            </h1>
+            <p class="hero__introText">
+                I’m a designer working on my skills as web-developer / web-designer. My passion is to create new experiences at the intersection of art, design, tech & user-interface.
+            </p>
+            <a href="#" id="sayHiButton" class="btn btn--hi">
+                <span class="btn__icon">→</span>
+                <span class="btn__text">say hi</span>
+            </a>
+        </section>
+
+        <section id="textareaSection" class="hidden">
+            <textarea id="message" placeholder="Type your message…"></textarea>
+            <a href="#" id="goBackButton" class="btn btn--hi">
+                <span class="btn__icon">←</span>
+                <span class="btn__text">go back</span>
+            </a>
+            <a href="#" id="sendButton" class="btn btn--snd" style="display: none;">
+                <span class="btn__text">send</span>
+            </a>
+        </section>
+
+<!-- Add this section where you want the grid to appear in your HTML -->
+<section class="portfolio" id="portfolio">
+    <div class="grid-container">
+        <div class="grid-item nod"></div>
+        <div class="grid-item experiments"></div>
+        <div class="grid-item medium"></div>
+        <div class="grid-item curve"></div>
+        <div class="grid-item waves"></div>
+        <div class="grid-item sneaker"></div>
+        <div class="grid-item car"></div>
+        <div class="grid-item circle"></div>
+        <div class="grid-item canvas"></div>
+        <div class="grid-item chat"></div>
+        <div class="grid-item ambient"></div>
+        <div class="grid-item frame"></div>
+        <div class="grid-item line"></div>
+        <div class="grid-item number"></div>
+        <div class="grid-item clock"></div>
+        <div class="grid-item aurora"></div>
+        <div class="grid-item screen"></div>
+    </div>
+</section>
+<!-- Add this section after the hero section and before the portfolio section -->
+<section class="write-section">
+  <h1>Write</h1>
+  <p>Writing is an essential part of my process. My essays were featured on FastCompany, TNW, Smashing Magazine, and Medium. You can find some of my latest writing below.</p>
+  
+  <div class="write-articles">
+      <div class="article-card">
+          <svg class="article-icon" viewBox="0 0 24 24" stroke="currentColor" fill="none">
+              <path d="M4 18L10 12L4 6" stroke-width="2" stroke-linecap="round"/>
+              <path d="M20 18L14 12L20 6" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+          <h2>How Apple beat Swiss watchmakers at their own game</h2>
+      </div>
+      
+      <div class="article-card">
+          <svg class="article-icon" viewBox="0 0 24 24" stroke="currentColor" fill="none">
+              <rect x="4" y="4" width="12" height="12" stroke-width="2"/>
+              <rect x="8" y="8" width="12" height="12" stroke-width="2"/>
+          </svg>
+          <h2>My chatbot is dead</h2>
+      </div>
+      
+      <div class="article-card">
+          <svg class="article-icon" viewBox="0 0 24 24" stroke="currentColor" fill="none">
+              <rect x="4" y="4" width="16" height="16" stroke-width="2"/>
+              <circle cx="18" cy="6" r="3" fill="currentColor"/>
+          </svg>
+          <h2>The rise of Anti-notifications</h2>
+      </div>
+  </div>
+  
+  <button class="add-article-btn">
+      <svg viewBox="0 0 24 24" stroke="currentColor" fill="none" width="24" height="24">
+          <path d="M12 5v14M5 12h14" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+  </button>
+</section>
+    
+<footer class="footer">
+    <div class="footer-container">
+      <div class="social-links">
+        <a href="https://twitter.com/yourhandle" target="_blank" rel="noopener noreferrer">
+          <svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+          </svg>
+        </a>
+        <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">
+          <svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+            <rect x="2" y="9" width="4" height="12"></rect>
+            <circle cx="4" cy="4" r="2"></circle>
+          </svg>
+        </a>
+      </div>
+      <div class="location">
+        made in India
+      </div>
+    </div>
+  </footer> 
+    </main>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
